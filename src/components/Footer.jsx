@@ -5,7 +5,7 @@ function Footer() {
   return (
     <footer className="bg-pink-500 text-white p-6 shadow-md"> {/* Add background shadow */}
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
-        <div className='px-6'>
+        <div className=''>
           <h4 className="text-lg font-bold mb-2">Menu</h4>
           <ul className="space-y-2">
             <li><a href="#start" className="hover:text-pink-200">Start Here</a></li>
