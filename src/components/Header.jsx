@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom'; // Import the Link component
 import { Transition } from '@headlessui/react'; // For smooth animations
 
 function Header() {
@@ -19,7 +20,7 @@ function Header() {
   return (
     <header className="bg-white text-gray-800 p-4 fixed top-0 left-0 right-0 shadow-md z-10"> {/* z-10 for stacking order */}
       <div className="container mx-auto flex justify-between items-center max-w-7xl">
-        <h1 className="text-2xl font-bold">WomenBlog</h1>
+        <Link to="/" className="text-2xl font-bold">WomenBlog</Link>
         {/* Mobile menu button */}
         <button
           className="block md:hidden focus:outline-none"
