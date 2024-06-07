@@ -5,25 +5,56 @@ function Sidebar() {
     <div className="bg-white rounded-lg shadow-lg p-6 divide-y space-y-6">
       <div className="pb-4 divide-y ">
         <h3 className="text-xl font-bold mb-4">Jump To Section</h3>
-        <ul className="h-32 overflow-y-auto custom-scrollbar space-y-2 px-6 py-3">
-          {/* Your navigation links */}
-          <h2 className='text-blue-500'>Blog for mental health</h2>
-          <li><a href="#start" className="text-blue-500 text-sm hover:underline px-4">Read the hottest topics here</a></li>
-          <li><a href="#start" className="text-blue-500 text-sm hover:underline px-4">Read the hottest topics here</a></li>
-          <li><a href="#start" className="text-blue-500 text-sm hover:underline px-4">Read the hottest topics here</a></li>
-          <li><a href="#start" className="text-blue-500 text-sm hover:underline px-4">Read the hottest topics here</a></li>
-          <li><a href="#start" className="text-blue-500 text-sm hover:underline px-4">Read the hottest topics here</a></li>
-          <li><a href="#start" className="text-blue-500 text-sm hover:underline px-4">Read the hottest topics here</a></li>
-          {/* Add more navigation links here */}
+        <ul className="h-48 overflow-y-auto custom-scrollbar space-y-2 px-6 py-3">
 
-          <h2 className='text-blue-500'>Blog for Lifestyle changes</h2>
+        <h2 className='text-blue-500'><a href='#featured'>Featured Post</a></h2>
+          <li><a href="#featured" className="text-blue-500 text-sm hover:underline px-4">Gender-based Violence</a></li>
+        
+
+          <h2 className='text-blue-500'><a href='#latest'>Latest Post</a></h2>
+          <li><a href="#latest" className="text-blue-500 text-sm hover:underline px-4">The importance of self-care for Women</a></li>
+          <li><a href="#latest" className="text-blue-500 text-sm hover:underline px-4">Breaking the Glass Ceiling</a></li>
+          <li><a href="#latest" className="text-blue-500 text-sm hover:underline px-4">Navigating Motherhood</a></li>
+
+          <h2 className='text-blue-500'><a href='#reads'>10 Empowering Books Every Woman Should Read</a></h2>
+          <li><a href="#reads" className="text-blue-500 text-sm hover:underline px-4">Smart Money Woman</a></li>
+          <li><a href="#reads" className="text-blue-500 text-sm hover:underline px-4">Public Speaking</a></li>
+          <li><a href="#reads" className="text-blue-500 text-sm hover:underline px-4">Rich Dad Poor Dad</a></li>
+          <li><a href="#reads" className="text-blue-500 text-sm hover:underline px-4">An Enemy called Average</a></li>
+          
+         
+
+          <h2 className='text-blue-500'>Empowerment</h2>
           <li><a href="#start" className="text-blue-500 text-sm hover:underline px-4">Read the hottest topics here</a></li>
           <li><a href="#start" className="text-blue-500 text-sm hover:underline px-4">Read the hottest topics here</a></li>
           <li><a href="#start" className="text-blue-500 text-sm hover:underline px-4">Read the hottest topics here</a></li>
           <li><a href="#start" className="text-blue-500 text-sm hover:underline px-4">Read the hottest topics here</a></li>
           <li><a href="#start" className="text-blue-500 text-sm hover:underline px-4">Read the hottest topics here</a></li>
           <li><a href="#start" className="text-blue-500 text-sm hover:underline px-4">Read the hottest topics here</a></li>
-          {/* Add more navigation links here */}
+
+          <h2 className='text-blue-500'>Self Care</h2>
+          <li><a href="#start" className="text-blue-500 text-sm hover:underline px-4">Read the hottest topics here</a></li>
+          <li><a href="#start" className="text-blue-500 text-sm hover:underline px-4">Read the hottest topics here</a></li>
+          <li><a href="#start" className="text-blue-500 text-sm hover:underline px-4">Read the hottest topics here</a></li>
+          <li><a href="#start" className="text-blue-500 text-sm hover:underline px-4">Read the hottest topics here</a></li>
+          <li><a href="#start" className="text-blue-500 text-sm hover:underline px-4">Read the hottest topics here</a></li>
+          <li><a href="#start" className="text-blue-500 text-sm hover:underline px-4">Read the hottest topics here</a></li>
+
+          <h2 className='text-blue-500'>Career & Leadership</h2>
+          <li><a href="#start" className="text-blue-500 text-sm hover:underline px-4">Read the hottest topics here</a></li>
+          <li><a href="#start" className="text-blue-500 text-sm hover:underline px-4">Read the hottest topics here</a></li>
+          <li><a href="#start" className="text-blue-500 text-sm hover:underline px-4">Read the hottest topics here</a></li>
+          <li><a href="#start" className="text-blue-500 text-sm hover:underline px-4">Read the hottest topics here</a></li>
+          <li><a href="#start" className="text-blue-500 text-sm hover:underline px-4">Read the hottest topics here</a></li>
+          <li><a href="#start" className="text-blue-500 text-sm hover:underline px-4">Read the hottest topics here</a></li>
+
+          <h2 className='text-blue-500'>Read more from the Blog</h2>
+          <li><a href="#start" className="text-blue-500 text-sm hover:underline px-4">Read the hottest topics here</a></li>
+          <li><a href="#start" className="text-blue-500 text-sm hover:underline px-4">Read the hottest topics here</a></li>
+          <li><a href="#start" className="text-blue-500 text-sm hover:underline px-4">Read the hottest topics here</a></li>
+          <li><a href="#start" className="text-blue-500 text-sm hover:underline px-4">Read the hottest topics here</a></li>
+          <li><a href="#start" className="text-blue-500 text-sm hover:underline px-4">Read the hottest topics here</a></li>
+          <li><a href="#start" className="text-blue-500 text-sm hover:underline px-4">Read the hottest topics here</a></li>     
         </ul>
         
       </div>

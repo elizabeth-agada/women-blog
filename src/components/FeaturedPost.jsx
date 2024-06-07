@@ -7,7 +7,7 @@ function FeaturedPost({ post }) {
       <div className="p-6">
         <h2 className="text-2xl font-bold mb-2">{post.title}</h2>
         <p className="text-gray-600 mb-4">{post.excerpt}</p>
-        <button className="bg-pink-500 hover:bg-pink-600 text-black font-bold py-2 px-4 rounded">
+        <button className="bg-gradient-to-r from-pink-500 to-purple-500 hover:from-pink-600 hover:to-purple-600 text-white font-bold py-2 px-4 rounded">
           Read More content
         </button>
       </div>
