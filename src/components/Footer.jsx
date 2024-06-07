@@ -3,10 +3,14 @@ import { FaTwitter, FaFacebook, FaInstagram } from 'react-icons/fa';
 
 function Footer() {
   return (
-    <footer className="bg-pink-500 text-white p-6 shadow-md"> {/* Add background shadow */}
-      <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
-        <div className=''>
-          <h4 className="text-lg font-bold mb-2">Menu</h4>
+    <footer className="bg-pink-500 text-white p-6 shadow-md">
+      <div className="container mx-auto grid grid-cols-1 max-w-7xl md:grid-cols-4 gap-8 py-16"> {/* 4 columns for better spacing */}
+        <div className="md:col-span-2"> 
+          <h2 className='text-4xl'>WomenBlog</h2>
+          <p className="text-gray-100">Sharing experiences and living while at it</p>
+        </div>
+        <div>
+          <h4 className="text-lg font-bold mb-2">More Links</h4>
           <ul className="space-y-2">
             <li><a href="#start" className="hover:text-pink-200">Start Here</a></li>
             <li><a href="#guides" className="hover:text-pink-200">Guides</a></li>
@@ -16,7 +20,7 @@ function Footer() {
         </div>
         <div>
           <h4 className="text-lg font-bold mb-2">Contact</h4>
-          <p className="text-white">Contact us at womenblog@example.com</p> {/* Fix the contact email */}
+          <a href="mailto:zeera@womenblog.com" className="text-white">Contact us at zeera@womenblog.com</a>
         </div>
         <div>
           <h4 className="text-lg font-bold mb-2">Follow Us</h4>

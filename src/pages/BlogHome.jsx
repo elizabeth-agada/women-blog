@@ -4,6 +4,7 @@ import LatestPost from '../components/LatestPost';  // Your component for latest
 import SideBar from '../components/SideBar';       // Your component for sidebar content
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import { Link } from 'react-router-dom';
 
 function BlogHome() {
   const [featuredPost, setFeaturedPost] = useState(null);
@@ -53,7 +54,7 @@ function BlogHome() {
 
             {/* Latest posts */}
             <section className="container mx-auto mt-8">
-              <h2 className="text-2xl md:text-3xl font-bold mb-4">Latest Posts</h2>
+              <Link to="" className="text-2xl md:text-3xl font-bold mb-4">Latest Posts</Link>
               <LatestPost posts={latestPosts} />
             </section>
 
@@ -79,6 +80,34 @@ function BlogHome() {
             <SideBar />
           </div>
         </div>
+
+        {/* Read more section */}
+        <section className="container mx-auto mt-8 max-w-7xl">
+          <h2 className="text-2xl md:text-3xl font-bold mb-4">Read more from the blog</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 ">
+            {/* Card 1 */}
+            <div className="bg-white rounded-lg shadow-lg p-6">
+              <h3 className="text-xl font-bold mb-2">Post Title 1</h3>
+              <p className="text-gray-600 mb-4">June 1, 2024</p>
+              <p className="text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eu massa odio.</p>
+              <a href="#Read" className="text-blue-600 hover:underline">Read more</a>
+            </div>
+            {/* Card 2 */}
+            <div className="bg-white rounded-lg shadow-lg p-6">
+              <h3 className="text-xl font-bold mb-2">Post Title 2</h3>
+              <p className="text-gray-600 mb-4">June 2, 2024</p>
+              <p className="text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eu massa odio.</p>
+              <a href="#Read" className="text-blue-600 hover:underline">Read more</a>
+            </div>
+            {/* Card 3 */}
+            <div className="bg-white rounded-lg shadow-lg p-6">
+              <h3 className="text-xl font-bold mb-2">Post Title 3</h3>
+              <p className="text-gray-600 mb-4">June 3, 2024</p>
+              <p className="text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eu massa odio.</p>
+              <a href="#Read" className="text-blue-600 hover:underline">Read more</a>
+            </div>
+          </div>
+        </section>
       </main>
 
       <Footer />

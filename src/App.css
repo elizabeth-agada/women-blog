@@ -36,3 +36,20 @@
     transform: rotate(360deg);
   }
 }
+
+
+/* Customize the scrollbar */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px; /* Set the width of the scrollbar */
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent; /* Set the background color of the track */
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #F3E5F5; /* Set the color of the thumb */
+  border-radius: 20px;       /* Round the corners of the thumb */
+  border: 2px solid #FFFFFF; /* Add a white border to the thumb */
+}
+
