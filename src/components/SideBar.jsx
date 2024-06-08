@@ -8,7 +8,7 @@ function Sidebar() {
         <ul className="h-48 overflow-y-auto custom-scrollbar space-y-2 px-6 py-3">
 
         <h2 className='text-blue-500'><a href='#featured'>Featured Post</a></h2>
-          <li><a href="#featured" className="text-blue-500 text-sm hover:underline px-4">Gender-based Violence</a></li>
+          <li><a href="#featured" className="text-blue-500 text-sm hover:underline px-4">The power of Motherhood</a></li>
         
 
           <h2 className='text-blue-500'><a href='#latest'>Latest Post</a></h2>

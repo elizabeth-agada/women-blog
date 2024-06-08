@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import FeaturedPost from '../components/FeaturedPost'; 
-import LatestPost from '../components/LatestPost';  
+import FeaturedPost from '../components/FeaturedPost';  
 import SideBar from '../components/SideBar';       
 import Header from '../components/Header';
 import Footer from '../components/Footer';
@@ -26,9 +25,9 @@ function BlogHome() {
 
     // Mock data for latest posts
     const mockLatestPosts = [
-      { id: 1, title: "The Importance of Self-Care for Women", date: "June 3, 2024" },
-      { id: 2, title: "Breaking the Glass Ceiling: Stories of Success", date: "June 2, 2024" },
-      { id: 3, title: "Navigating Motherhood: Tips for New Moms", date: "June 1, 2024" },
+      { id: 1, title: "The Importance of Self-Care for Women", date: "June 3, 2024", image: "./care.webp" },
+      { id: 2, title: "Breaking the Glass Ceiling: Stories of Success", date: "June 2, 2024", image: "./glass.jpg" },
+      { id: 3, title: "Navigating Motherhood: Tips for New Moms", date: "June 1, 2024", image: "./motherhood.jpeg" },
     ];
 
     setFeaturedPost(FeaturedPost);
@@ -49,7 +48,7 @@ function BlogHome() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    // Here you can handle submitting the comment, for example, sending it to a backend server
+    // Handle submitting the comment, for example, sending it to a backend server
     console.log('Name:', name);
     console.log('Email:', email);
     console.log('Comment:', comment);
@@ -77,9 +76,9 @@ function BlogHome() {
             <div className="py-6 flex-col md:flex-row">
               <h1 className="text-2xl md:text-3xl font-bold text-gray-800">Nurturing Every Aspect of Womanhood</h1>
             
-              <div className="md:ml-4 flex justify-start gap-5">
+              <div className="md:ml-4 block md:flex justify-start gap-5">
                 <img src="/liz3_prev_ui.png" alt="img" className="my-4 rounded-full h-24 w-24" />
-                <div className='py-5 space-y-2'>
+                <div className='md:py-5 space-y-2'>
                 <p className='font-medium'>By Maryam Zeera</p>
                 <p className='text-gray-800 text-sm'>
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam sit nisi in nam tenetur. Fugiat asperiores inventore porro atque laborum fuga accusamus aperiam officiis, obcaecati, eveniet nisi fugit eius exercitationem.
@@ -108,10 +107,19 @@ function BlogHome() {
               )}
             </div>
 
-            {/* Latest posts */}
-            <section id="latest" className="container mx-auto mt-8">
+             {/* Latest posts */}
+             <section id="latest" className="container mx-auto mt-8">
               <Link to="" className="text-2xl md:text-3xl font-bold mb-4 text-gray-800">Latest Posts</Link>
-              <LatestPost posts={latestPosts} />
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+                {latestPosts.map(post => (
+                  <div key={post.id} className="bg-white rounded-lg shadow-lg p-6 text-gray-800">
+                    <img src={post.image} alt={post.title} className="w-full h-48 object-cover rounded-md mb-4" />
+                    <h3 className="text-xl font-bold mb-2">{post.title}</h3>
+                    <p className="text-gray-600 mb-4">{post.date}</p>
+                    <a href={`/post/${post.id}`} className="text-blue-600 hover:underline">Read more</a>
+                  </div>
+                ))}
+              </div>
             </section>
 
             
@@ -266,27 +274,28 @@ function BlogHome() {
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 ">
             {/* Card 1 */}
             <div className="bg-white rounded-lg shadow-lg p-6 text-gray-800">
-              <h3 className="text-xl font-bold mb-2">Post Title 1</h3>
+              <h3 className="text-xl font-bold mb-2">Empowering Women in Tech</h3>
               <p className="text-gray-600 mb-4">June 1, 2024</p>
-              <p className="text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eu massa odio.</p>
+              <p className="text-lg">Discover how women are breaking barriers and leading innovations in the technology sector. Learn about initiatives and programs supporting women in tech.</p>
               <a href="#read-more" className="text-blue-600 hover:underline">Read more</a>
             </div>
             {/* Card 2 */}
             <div className="bg-white rounded-lg shadow-lg p-6 text-gray-800">
-              <h3 className="text-xl font-bold mb-2">Post Title 2</h3>
+              <h3 className="text-xl font-bold mb-2">Women’s Health and Wellness</h3>
               <p className="text-gray-600 mb-4">June 2, 2024</p>
-              <p className="text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eu massa odio.</p>
+              <p className="text-lg">Explore essential health and wellness tips specifically for women. From mental health to fitness routines, find valuable advice for maintaining a healthy lifestyle.</p>
               <a href="#read-more" className="text-blue-600 hover:underline">Read more</a>
             </div>
             {/* Card 3 */}
             <div className="bg-white rounded-lg shadow-lg p-6 text-gray-800">
-              <h3 className="text-xl font-bold mb-2">Post Title 3</h3>
+              <h3 className="text-xl font-bold mb-2">Female Entrepreneurs to Watch</h3>
               <p className="text-gray-600 mb-4">June 3, 2024</p>
-              <p className="text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eu massa odio.</p>
+              <p className="text-lg">Get inspired by stories of successful female entrepreneurs. Learn about their journeys, challenges they overcame, and tips for aspiring women business leaders.</p>
               <a href="#read-more" className="text-blue-600 hover:underline">Read more</a>
             </div>
           </div>
         </section>
+
       </main>
 
       <Footer />
